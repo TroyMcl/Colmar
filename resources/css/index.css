@@ -1,6 +1,7 @@
 html {
   font-family:sans-serif;
 }
+
 header {
   display:flex;
   align-items: center;
@@ -32,6 +33,11 @@ header {
    display:inline-block;
    margin-left:16px;
  }
+@media screen and (max-width:480px) {
+  header {
+    height:64px;
+  }
+}
  /* Banner section */
 
 .banner {
@@ -48,7 +54,6 @@ header {
   width: 100%;
   height:auto;
   overflow:hidden;
-
 }
 
 .start {
@@ -76,6 +81,18 @@ header {
   margin:24px;
   width:75%;
 }
+
+@media screen and (max-width:480px) {
+  #id {
+    width:100%;
+    display:block;
+  }
+  .start {
+    width:100%;
+    display:block;
+  }
+}
+/* Info */
 
 .info {
   display:flex;
@@ -133,6 +150,28 @@ header {
   font-size: 20px;
 }
 
+@media screen and (max-width:480px) {
+  .practice {
+    display:none
+  }
+  .events {
+    width:100%;
+    margin:16px;
+  }
+  .list {
+    margin-bottom:64px;
+  }
+  .list img {
+    width:100%;
+    height: auto;
+    display:block;
+    overflow:hidden;
+  }
+  .list h2,p {
+    margin-left:16px;
+  }
+}
+
 /* Learning section */
 
 .Learning {
@@ -153,7 +192,7 @@ header {
 
 .Courses {
   width: 30%;
-  height: 550px;
+  height: 500px;
   margin: 32px;
   background-color:white;
 }
@@ -175,6 +214,15 @@ header {
   overflow:hidden;
 }
 
+@media screen and (max-width:480px) {
+  .Courses img, p {
+    display:none;
+  }
+  .Courses {
+    margine:16px;
+    padding: 16px auto 24px 16px;
+  }
+}
 /*Thesis section */
 
 .Thesis {
@@ -241,6 +289,17 @@ header {
   font-size:20px;
   font-weight:300;
 }
+@media only screen and (max-width:480px) {
+  .Current {
+    width: 100%;
+    height:auto;
+    margin-top:16px;
+    margin-bottom:24px;
+  }
+  .Recent {
+    display:none;
+  }
+}
 
 footer {
   display:flex;
@@ -256,4 +315,9 @@ footer div p {
 
 footer nav span {
   margin: 16px;
+}
+@media only screen and (max-width:480px) {
+  nav {
+    display:none;
+  }
 }
